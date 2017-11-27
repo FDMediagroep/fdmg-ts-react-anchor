@@ -1,10 +1,18 @@
+import * as Enzyme from 'enzyme';
+import * as Adapter from 'enzyme-adapter-react-16';
+import { mount } from 'enzyme';
+
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import A from '../src/A';
 
 console.info = function() {};
 
-test('A renders correctly', () => {
+beforeAll(() => {
+    Enzyme.configure({ adapter: new Adapter() });
+});
+
+test('Anchor renders correctly', () => {
     let component = renderer.create(
         <A/>
     );
@@ -18,7 +26,7 @@ test('A renders correctly', () => {
     expect(tree).toMatchSnapshot();
 });
 
-test('A renders correctly with href', () => {
+test('Anchor renders correctly with href', () => {
     const component = renderer.create(
         <A href="https://fd.nl">test anchor</A>
     );
@@ -26,7 +34,7 @@ test('A renders correctly with href', () => {
     expect(tree).toMatchSnapshot();
 });
 
-test('A renders correctly with CSS class', () => {
+test('Anchor renders correctly with CSS class', () => {
     const component = renderer.create(
         <A className={'css-class-name'}>test anchor</A>
     );
@@ -34,7 +42,7 @@ test('A renders correctly with CSS class', () => {
     expect(tree).toMatchSnapshot();
 });
 
-test('A renders correctly with tabIndex', () => {
+test('Anchor renders correctly with tabIndex', () => {
     let component = renderer.create(
         <A tabIndex="2">test anchor</A>
     );
@@ -48,7 +56,7 @@ test('A renders correctly with tabIndex', () => {
     expect(tree).toMatchSnapshot();
 });
 
-test('A renders correctly with ARIA-label', () => {
+test('Anchor renders correctly with ARIA-label', () => {
     let component = renderer.create(
         <A>anchor text as ARIA-label</A>
     );
@@ -85,3 +93,13 @@ test('A renders correctly with ARIA-label', () => {
     tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 });
+
+test('Anchor onClick callback handling', () => {
+    const clickHandler = jest.fn();
+    let component = mount(
+        <A onClick={clickHandler}/>
+    );
+    component.simulate('click');
+    expect(clickHandler).toHaveBeenCalled();
+});
+

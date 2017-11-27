@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`A renders correctly 1`] = `
+exports[`Anchor renders correctly 1`] = `
 <a
   aria-label={undefined}
   className={undefined}
@@ -12,7 +12,7 @@ exports[`A renders correctly 1`] = `
 />
 `;
 
-exports[`A renders correctly 2`] = `
+exports[`Anchor renders correctly 2`] = `
 <a
   aria-label={undefined}
   className={undefined}
@@ -31,7 +31,7 @@ exports[`A renders correctly 2`] = `
 </a>
 `;
 
-exports[`A renders correctly with ARIA-label 1`] = `
+exports[`Anchor renders correctly with ARIA-label 1`] = `
 <a
   aria-label="anchor text as ARIA-label"
   className={undefined}
@@ -45,7 +45,7 @@ exports[`A renders correctly with ARIA-label 1`] = `
 </a>
 `;
 
-exports[`A renders correctly with ARIA-label 2`] = `
+exports[`Anchor renders correctly with ARIA-label 2`] = `
 <a
   aria-label="ARIA-label"
   className={undefined}
@@ -59,7 +59,7 @@ exports[`A renders correctly with ARIA-label 2`] = `
 </a>
 `;
 
-exports[`A renders correctly with ARIA-label 3`] = `
+exports[`Anchor renders correctly with ARIA-label 3`] = `
 <a
   aria-label="title shown as ARIA-label"
   className={undefined}
@@ -73,7 +73,7 @@ exports[`A renders correctly with ARIA-label 3`] = `
 </a>
 `;
 
-exports[`A renders correctly with ARIA-label 4`] = `
+exports[`Anchor renders correctly with ARIA-label 4`] = `
 <a
   aria-label="ariaLabel shown as ARIA-label"
   className={undefined}
@@ -87,7 +87,7 @@ exports[`A renders correctly with ARIA-label 4`] = `
 </a>
 `;
 
-exports[`A renders correctly with ARIA-label 5`] = `
+exports[`Anchor renders correctly with ARIA-label 5`] = `
 <a
   aria-label="title shown as ARIA-label"
   className={undefined}
@@ -106,7 +106,7 @@ exports[`A renders correctly with ARIA-label 5`] = `
 </a>
 `;
 
-exports[`A renders correctly with ARIA-label 6`] = `
+exports[`Anchor renders correctly with ARIA-label 6`] = `
 <a
   aria-label="ariaLabel shown as ARIA-label"
   className={undefined}
@@ -125,7 +125,7 @@ exports[`A renders correctly with ARIA-label 6`] = `
 </a>
 `;
 
-exports[`A renders correctly with CSS class 1`] = `
+exports[`Anchor renders correctly with CSS class 1`] = `
 <a
   aria-label="test anchor"
   className="css-class-name"
@@ -139,7 +139,7 @@ exports[`A renders correctly with CSS class 1`] = `
 </a>
 `;
 
-exports[`A renders correctly with href 1`] = `
+exports[`Anchor renders correctly with href 1`] = `
 <a
   aria-label="test anchor"
   className={undefined}
@@ -153,7 +153,7 @@ exports[`A renders correctly with href 1`] = `
 </a>
 `;
 
-exports[`A renders correctly with tabIndex 1`] = `
+exports[`Anchor renders correctly with tabIndex 1`] = `
 <a
   aria-label="test anchor"
   className={undefined}
@@ -167,7 +167,7 @@ exports[`A renders correctly with tabIndex 1`] = `
 </a>
 `;
 
-exports[`A renders correctly with tabIndex 2`] = `
+exports[`Anchor renders correctly with tabIndex 2`] = `
 <a
   aria-label="test anchor"
   className={undefined}

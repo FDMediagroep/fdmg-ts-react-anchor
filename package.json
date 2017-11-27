@@ -1,6 +1,6 @@
 {
   "name": "fdmg-ts-react-anchor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ReactJS Anchor component",
   "main": "dist/A.js",
   "types": "dist/A.d.ts",
