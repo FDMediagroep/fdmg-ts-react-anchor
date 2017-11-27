@@ -1,10 +1,12 @@
 import * as React from 'react';
+import {MouseEvent} from 'react';
 
 export interface Props {
     ariaLabel?: string;
     children?: JSX.Element[]|HTMLElement[]|string|number;
     className?: string;
     href?: string;
+    onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
     target?: string;
     tabIndex?: number;
     title?: string;
@@ -47,7 +49,9 @@ export default class A extends React.Component<Props, any> {
         return (
             <a href={this.props.href} className={this.props.className} aria-label={this.getAriaLabel()}
                target={this.props.target} tabIndex={this.props.tabIndex?this.props.tabIndex:0}
-               title={this.props.title}>{this.props.children}</a>
+               title={this.props.title} onClick={this.props.onClick}>
+                {this.props.children}
+            </a>
         );
     }
 }

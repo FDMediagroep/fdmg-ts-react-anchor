@@ -44,7 +44,7 @@ var A = /** @class */ (function (_super) {
         return ariaLabel;
     };
     A.prototype.render = function () {
-        return (React.createElement("a", { href: this.props.href, className: this.props.className, "aria-label": this.getAriaLabel(), target: this.props.target, tabIndex: this.props.tabIndex ? this.props.tabIndex : 0, title: this.props.title }, this.props.children));
+        return (React.createElement("a", { href: this.props.href, className: this.props.className, "aria-label": this.getAriaLabel(), target: this.props.target, tabIndex: this.props.tabIndex ? this.props.tabIndex : 0, title: this.props.title, onClick: this.props.onClick }, this.props.children));
     };
     return A;
 }(React.Component));

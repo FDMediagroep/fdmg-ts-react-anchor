@@ -1,11 +1,11 @@
 {
   "name": "fdmg-ts-react-anchor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ReactJS Anchor component",
   "main": "dist/A.js",
   "types": "dist/A.d.ts",
   "scripts": {
-    "release": "tsc -d",
+    "release": "tsc -d && npm install",
     "test": "jest",
     "updateSnapshot": "jest --updateSnapshot",
     "u": "npm test -- -u"

@@ -1,10 +1,12 @@
 /// <reference types="react" />
 import * as React from 'react';
+import { MouseEvent } from 'react';
 export interface Props {
     ariaLabel?: string;
     children?: JSX.Element[] | HTMLElement[] | string | number;
     className?: string;
     href?: string;
+    onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
     target?: string;
     tabIndex?: number;
     title?: string;
