@@ -5,7 +5,7 @@
   "main": "dist/A.js",
   "types": "dist/A.d.ts",
   "scripts": {
-    "release": "tsc -d && npm install",
+    "release": "npm install && tsc -d",
     "test": "jest",
     "updateSnapshot": "jest --updateSnapshot",
     "u": "npm test -- -u"
