@@ -6,7 +6,7 @@ import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 import A from '../src/A';
 
-console.info = function() {};
+console.info = () => {};
 
 beforeAll(() => {
     Enzyme.configure({ adapter: new Adapter() });
@@ -30,7 +30,7 @@ test('Anchor renders correctly with href', () => {
     const component = renderer.create(
         <A href="https://fd.nl">test anchor</A>
     );
-    let tree = component.toJSON();
+    const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 });
 
@@ -38,7 +38,7 @@ test('Anchor renders correctly with CSS class', () => {
     const component = renderer.create(
         <A className={'css-class-name'}>test anchor</A>
     );
-    let tree = component.toJSON();
+    const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 });
 
@@ -96,10 +96,9 @@ test('Anchor renders correctly with ARIA-label', () => {
 
 test('Anchor onClick callback handling', () => {
     const clickHandler = jest.fn();
-    let component = mount(
+    const component = mount(
         <A onClick={clickHandler}/>
     );
     component.simulate('click');
     expect(clickHandler).toHaveBeenCalled();
 });
-
