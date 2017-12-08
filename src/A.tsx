@@ -22,7 +22,6 @@ export default class A extends React.Component<Props, any> {
     constructor(props: Props) {
         super(props);
         this.props = props;
-        console.info('A component', props);
     }
 
     /**
@@ -35,11 +34,11 @@ export default class A extends React.Component<Props, any> {
      */
     getAriaLabel(): string {
         let ariaLabel;
-        if(this.props.ariaLabel) {
+        if (this.props.ariaLabel) {
             ariaLabel = this.props.ariaLabel;
-        } else if(this.props.title) {
+        } else if (this.props.title) {
             ariaLabel = this.props.title;
-        } else if(this.props.children && typeof(this.props.children) === 'string') {
+        } else if (this.props.children && typeof(this.props.children) === 'string') {
             ariaLabel = this.props.children;
         }
         return ariaLabel;
@@ -47,9 +46,15 @@ export default class A extends React.Component<Props, any> {
 
     render() {
         return (
-            <a href={this.props.href} className={this.props.className} aria-label={this.getAriaLabel()}
-               target={this.props.target} tabIndex={this.props.tabIndex?this.props.tabIndex:0}
-               title={this.props.title} onClick={this.props.onClick}>
+            <a
+                href={this.props.href}
+                className={this.props.className}
+                aria-label={this.getAriaLabel()}
+                target={this.props.target}
+                tabIndex={this.props.tabIndex ? this.props.tabIndex : 0}
+                title={this.props.title}
+                onClick={this.props.onClick}
+            >
                 {this.props.children}
             </a>
         );

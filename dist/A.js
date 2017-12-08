@@ -19,7 +19,6 @@ var A = /** @class */ (function (_super) {
     function A(props) {
         var _this = _super.call(this, props) || this;
         _this.props = props;
-        console.info('A component', props);
         return _this;
     }
     /**
