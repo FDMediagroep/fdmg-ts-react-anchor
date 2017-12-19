@@ -4,6 +4,8 @@
 [![npm version](https://badge.fury.io/js/%40fdmg%2Fts-react-anchor.svg)](https://badge.fury.io/js/%40fdmg%2Fts-react-anchor)
 
 # fdmg-ts-react-anchor
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fdmg-ts-react-anchor.svg)](https://greenkeeper.io/)
 [ReactJS](https://reactjs.org/) Anchor component. This component renders an Anchor header.
 You might think it silly to have this as a separate component. But when you use an Anchor-element multiple times in your
 project then having that as a component might eventually save you some bytes.
