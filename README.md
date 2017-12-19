@@ -1,11 +1,10 @@
-[![Build Status](https://travis-ci.org/FDMediagroep/fdmg-ts-react-anchor.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-ts-react-anchor)
-[![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fdmg-ts-react-anchor/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fdmg-ts-react-anchor?branch=master)
-
-[![npm version](https://badge.fury.io/js/%40fdmg%2Fts-react-anchor.svg)](https://badge.fury.io/js/%40fdmg%2Fts-react-anchor)
-
 # fdmg-ts-react-anchor
 
+[![Build Status](https://travis-ci.org/FDMediagroep/fdmg-ts-react-anchor.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-ts-react-anchor)
+[![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fdmg-ts-react-anchor/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fdmg-ts-react-anchor?branch=master)
+[![npm version](https://badge.fury.io/js/%40fdmg%2Fts-react-anchor.svg)](https://badge.fury.io/js/%40fdmg%2Fts-react-anchor)
 [![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fdmg-ts-react-anchor.svg)](https://greenkeeper.io/)
+
 [ReactJS](https://reactjs.org/) Anchor component. This component renders an Anchor header.
 You might think it silly to have this as a separate component. But when you use an Anchor-element multiple times in your
 project then having that as a component might eventually save you some bytes.
