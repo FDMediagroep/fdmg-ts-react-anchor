@@ -2,25 +2,13 @@
 
 exports[`Anchor renders correctly 1`] = `
 <a
-  aria-label={undefined}
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
-  title={undefined}
 />
 `;
 
 exports[`Anchor renders correctly 2`] = `
 <a
-  aria-label={undefined}
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
-  title={undefined}
 >
   <span>
     testing 123
@@ -34,12 +22,7 @@ exports[`Anchor renders correctly 2`] = `
 exports[`Anchor renders correctly with ARIA-label 1`] = `
 <a
   aria-label="anchor text as ARIA-label"
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
-  title={undefined}
 >
   anchor text as ARIA-label
 </a>
@@ -48,12 +31,7 @@ exports[`Anchor renders correctly with ARIA-label 1`] = `
 exports[`Anchor renders correctly with ARIA-label 2`] = `
 <a
   aria-label="ARIA-label"
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
-  title={undefined}
 >
   anchor text, not ARIA
 </a>
@@ -62,11 +40,7 @@ exports[`Anchor renders correctly with ARIA-label 2`] = `
 exports[`Anchor renders correctly with ARIA-label 3`] = `
 <a
   aria-label="title shown as ARIA-label"
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
   title="title shown as ARIA-label"
 >
   anchor text, not ARIA
@@ -76,11 +50,7 @@ exports[`Anchor renders correctly with ARIA-label 3`] = `
 exports[`Anchor renders correctly with ARIA-label 4`] = `
 <a
   aria-label="ariaLabel shown as ARIA-label"
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
   title="this should not be shown as ARIA-label"
 >
   anchor text, not ARIA
@@ -90,11 +60,7 @@ exports[`Anchor renders correctly with ARIA-label 4`] = `
 exports[`Anchor renders correctly with ARIA-label 5`] = `
 <a
   aria-label="title shown as ARIA-label"
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
   title="title shown as ARIA-label"
 >
   <span>
@@ -109,12 +75,7 @@ exports[`Anchor renders correctly with ARIA-label 5`] = `
 exports[`Anchor renders correctly with ARIA-label 6`] = `
 <a
   aria-label="ariaLabel shown as ARIA-label"
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
-  title={undefined}
 >
   <span>
     testing 123
@@ -129,11 +90,7 @@ exports[`Anchor renders correctly with CSS class 1`] = `
 <a
   aria-label="test anchor"
   className="css-class-name"
-  href={undefined}
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
-  title={undefined}
 >
   test anchor
 </a>
@@ -142,12 +99,8 @@ exports[`Anchor renders correctly with CSS class 1`] = `
 exports[`Anchor renders correctly with href 1`] = `
 <a
   aria-label="test anchor"
-  className={undefined}
   href="https://fd.nl"
-  onClick={undefined}
   tabIndex={0}
-  target={undefined}
-  title={undefined}
 >
   test anchor
 </a>
@@ -156,12 +109,7 @@ exports[`Anchor renders correctly with href 1`] = `
 exports[`Anchor renders correctly with tabIndex 1`] = `
 <a
   aria-label="test anchor"
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex="2"
-  target={undefined}
-  title={undefined}
 >
   test anchor
 </a>
@@ -170,12 +118,7 @@ exports[`Anchor renders correctly with tabIndex 1`] = `
 exports[`Anchor renders correctly with tabIndex 2`] = `
 <a
   aria-label="test anchor"
-  className={undefined}
-  href={undefined}
-  onClick={undefined}
   tabIndex="-1"
-  target={undefined}
-  title={undefined}
 >
   test anchor
 </a>
